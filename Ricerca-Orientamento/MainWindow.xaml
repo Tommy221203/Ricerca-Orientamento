@@ -12,7 +12,8 @@
         <Button x:Name="visualizza" Content="Visualizza" HorizontalAlignment="Left" Height="49" Margin="301,110,0,0" VerticalAlignment="Top" Width="143" Click="visualizza_Click" FontSize="24"/>
         <Button x:Name="salva" Content="Salva" HorizontalAlignment="Left" Height="48" Margin="301,192,0,0" VerticalAlignment="Top" Width="143" FontSize="22" Click="salva_Click"/>
         <ScrollViewer x:Name="lblresult" HorizontalAlignment="Left" Height="355" Margin="551,28,0,0" VerticalAlignment="Top" Width="210" Background="#FFFFE800" FontSize="24"/>
-        <Button x:Name="btnpulici" Content="Pulisci File" HorizontalAlignment="Left" Height="60" Margin="301,267,0,0" VerticalAlignment="Top" Width="143" FontSize="24" Click="btnpulici_Click"/>
+        <Button x:Name="btncerca" Content="cerca" HorizontalAlignment="Left" Height="46" Margin="393,337,0,0" VerticalAlignment="Top" Width="127" FontSize="36" Click="btncerca_Click"/>
+        <TextBox x:Name="lblcerca" HorizontalAlignment="Left" Height="46" Margin="34,337,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="288" FontSize="20"/>
 
     </Grid>
 </Window>

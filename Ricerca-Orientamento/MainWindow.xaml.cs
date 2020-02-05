@@ -57,6 +57,7 @@ namespace Ricerca_Orientamento
             nomistudenti.Sort();
             foreach (var name in nomistudenti)
                 lblresult.Content += ($"{name} \n");
+            lblresult.Content = "";
         }
 
         private void salva_Click(object sender, RoutedEventArgs e)
@@ -72,10 +73,15 @@ namespace Ricerca_Orientamento
            
         }
 
-        private void btnpulici_Click(object sender, RoutedEventArgs e)
+        private void btncerca_Click(object sender, RoutedEventArgs e)
         {
-            File.Delete(filetesto);
-            File.Create(filetesto);
+            string name = lblcerca.Text;
+            if (nomistudenti.Contains(name))
+            {
+                MessageBox.Show("POSITIVO", "il valore esiste nella lista");
+            }
+            else
+                MessageBox.Show("NEGATIVO", "il valore non esiste nella lista");
         }
     }
 }
